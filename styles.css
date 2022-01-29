@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100% !important;
+  border-bottom: 2px solid black;
+}
+
+.nav-link {
+  font-family: Helvetica, sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #a09696 !important;
+}
+
+.nav-item:active {
+  background-color: #d2c8c8 !important;
+}
+
+.nav-link:active {
+  color: darkgrey !important;
+}
+
+.bg-light {
+  background-color: #f5f5f5 !important;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-top: 50px;
+}
+
+.content {
+  width: 100%;
+  background-color: #FFFFE0;
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+}
+
+.footer-item {
+  padding: 20px;
+  color: darkgrey;
+}
+
+.box {
+  padding: 5px;
+  border: 2px solid #3c1414;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.index-pic {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.divisor {
+  width: 100%;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product, .product-description {
+  width: 100%;
+  border: 2px solid #3c1414;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toolbar-image {
+  width: 40px;
+}
+
+.welcome-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.personal-info {
+  padding: 30px;
+}
+
+
+@media only screen and (min-width: 961px) {
+  .content {
+    min-height: 100px;
+  }
+
+  .product-container,
+  .product-description {
+    width: 900px;
+  }
+
+  .product-photo {
+    width: 500px;
+    margin-right: 30px;
+  }
+
+  .product {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .welcome-info {
+    width: 900px;
+  }
+
+  .welcome-info,
+  .product,
+  .product-description {
+    flex-wrap:nowrap;
+    flex-direction: row;
+  }
+
+  .index-pic {
+    width: 800px;
+  }
+
+  .product-info {
+    border: 2px solid #3c1414;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+  }
+
+  .personal-info {
+    width: 900px;
+  }
+}
